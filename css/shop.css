@@ -1,0 +1,459 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+/* Importing the Poppins font */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f8f8;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+.nav-section.left {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    left: 120px;
+    gap: 54px;
+    width: auto;
+}
+
+.nav-link {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    color: #666872;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.logo {
+    position: absolute;
+    width: 262px;
+    height: 52px;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+.nav-section.right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45px;
+    right: 120px;
+    gap: 54px;
+    width: auto;
+}
+
+.nav-link.right {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    color: #666872;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/*homeshop*/
+.home-shop {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 115px;
+    color: #666872;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-shop h8 a {
+    text-decoration: none;
+    color: #666872;
+}
+
+.home-shop a:hover {
+    color: #690505;
+    cursor: pointer;
+}
+
+/*homeshop hover*/
+.home-shop:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 95vw;
+    height: 100vh;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* General card styling */
+.card {
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 50px 0px #0000001a;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+#mark {
+    width: 650px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Specific card styles */
+.cars-card,
+.cart-card,
+.add-car-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#min-price {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 320px;
+}
+
+#max-price {
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 320px;
+}
+
+.cars-list,
+.cart-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-item,
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.car-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.car-mark,
+.car-model,
+.car-price,
+.add-cart,
+.remove {
+    flex: 1;
+}
+
+.add-cart,
+.remove,
+.sell,
+.cancel,
+.add-vehicle {
+    background-color: #a00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.separator {
+    text-align: center;
+    font-family: monospace;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.sell,
+.cancel {
+    margin: 10px 5px;
+}
+.price-range {
+    margin-top: 30px;
+}
+
+.price-range label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 200;
+    color: #8d8c8c;
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.inputs input {
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #333;
+    font-size: 30px;
+    margin-top: 3px;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 50;
+    font-size: 14px;
+    color: #333;
+}
+
+.cars-card,
+.cart-card {
+    overflow-y: auto;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+.add-car-card {
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 50px 0px #0000001a;
+    background-color: #f9f9f9;
+    overflow-y: hidden;
+}
+
+.add-car-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+.add-car-card label {
+    font-weight: 400;
+    font-size: 13px;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-car-card input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 5px 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.price-url {
+    display: flex;
+    gap: 8px;
+}
+
+.price-url div {
+    flex: 1;
+}
+
+.price-url input[type="text"] {
+    width: 100%;
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.add-vehicle {
+    display: inline-block;
+    width: 100px;
+    padding: 5px 0;
+    background-color: #a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button:hover,
+.add-vehicle:hover,
+.remove:hover,
+.sell:hover,
+.cancel:hover {
+    background-color: rgb(96, 3, 3);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content for Payment Form */
+.model-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: white;
+    width: 400px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.modal hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 0 auto;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Pay Button */
+.pay-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.pay-button:hover {
+    background-color: #a50d0d;
+}
+
+/* Privacy Note */
+.privacy-note {
+    font-size: 0.75em;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Success Message Popup */
+.success-message {
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.success-message .checkmark {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+}
